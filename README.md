@@ -149,16 +149,11 @@ PRODUCT ENGINEERING
 
 ---
 
-## GitHub Activity
+## Engineering Activity
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=prajansanjayk1&show_icons=true&hide_border=true&bg_color=00000000&title_color=2563EB&icon_color=7C3AED&text_color=475569&rank_icon=github" height="170" alt="GitHub statistics" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=prajansanjayk1&layout=compact&hide_border=true&bg_color=00000000&title_color=2563EB&text_color=475569" height="170" alt="Top languages" />
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=prajansanjayk1&hide_border=true&background=00000000&ring=2563EB&fire=7C3AED&currStreakLabel=2563EB&sideLabels=475569&dates=64748B" alt="GitHub contribution streak" />
-</p>
+<div align="center">
+  <img src="./assets/activity-dashboard.svg" alt="Prajan Sanjay K — Engineering Activity Dashboard" width="100%" />
+</div>
 
 ---
 
