@@ -8,21 +8,21 @@
   <img src="https://img.shields.io/github/followers/prajansanjayk1?style=flat-square&label=Followers&color=7C3AED" alt="Followers" />
 </p>
 
-## 👋 About Me
+## About Me
 
 I'm **Prajan Sanjay K**, a **B.E. CSE student specializing in Cybersecurity** with a strong interest in building secure, intelligent and production-oriented systems.
 
 My work sits at the intersection of **Cybersecurity × AI/ML × Cloud Engineering × Full-Stack Development**. I enjoy taking an idea from architecture and implementation through deployment, testing and real-world evaluation.
 
-- 🔐 Cybersecurity, secure software & CTFs
-- 🤖 AI/ML, explainable models & intelligent systems
-- ☁️ AWS cloud infrastructure, deployment & DevOps
-- 💻 Full-stack and cross-platform application development
-- 🚀 Hackathons, research-driven prototypes & product engineering
+- **Cybersecurity** — secure software, application security & CTFs
+- **AI / ML** — predictive systems, explainable models & intelligent agents
+- **Cloud Engineering** — AWS infrastructure, deployment & DevOps
+- **Software Engineering** — full-stack and cross-platform application development
+- **Product Engineering** — hackathons, research-driven prototypes & practical systems
 
 ---
 
-## 🧬 Technology DNA
+## Technology DNA
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=python,js,ts,html,css,react,nodejs,express,flutter,firebase,supabase,mongodb,mysql,aws,docker,git,github,linux&perline=9" alt="Technology stack" />
@@ -39,13 +39,13 @@ My work sits at the intersection of **Cybersecurity × AI/ML × Cloud Engineerin
 
 ---
 
-## 🚀 Featured Systems
+## Featured Systems
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### ✈️ SubAero — Aerothon 2026
+### SubAero — Aerothon 2026
 **Digital Twin & Aerospace Prognostics**
 
 Aerospace-focused predictive maintenance platform developed for **Aerothon 2026** with team **Null Pointerz**. The project explores remaining-useful-life estimation, feature engineering, interpretable machine learning and physics-informed aerospace reasoning for turbojet engine maintenance.
@@ -55,7 +55,7 @@ Aerospace-focused predictive maintenance platform developed for **Aerothon 2026*
 </td>
 <td width="50%" valign="top">
 
-### 🏥 MediQue
+### MediQue
 **Smart Healthcare Queue Intelligence**
 
 Real-time clinic workflow platform with live queue synchronization, intelligent wait-time estimation, receptionist workflows and patient-facing updates.
@@ -67,7 +67,7 @@ Real-time clinic workflow platform with live queue synchronization, intelligent 
 <tr>
 <td width="50%" valign="top">
 
-### 🍽️ AURYN
+### AURYN
 **AI-Powered Hospitality Platform**
 
 A multi-workspace restaurant platform connecting customer, staff and manager workflows with intelligent assistance, real-time operations and a unified digital experience.
@@ -77,7 +77,7 @@ A multi-workspace restaurant platform connecting customer, staff and manager wor
 </td>
 <td width="50%" valign="top">
 
-### 💳 FINOAISPARK
+### FINOAISPARK
 **Financial Security Intelligence**
 
 An AI-assisted financial security concept exploring risk monitoring, banking defense workflows and multi-agent reasoning for financial systems.
@@ -90,9 +90,9 @@ An AI-assisted financial security concept exploring risk monitoring, banking def
 
 ---
 
-## 💼 Internship Experience
+## Internship Experience
 
-### ☁️ DevOps & AWS Cloud Engineering Intern
+### DevOps & AWS Cloud Engineering Intern
 **SBV Technologies Pvt. Ltd. · May 2026 – June 2026**
 
 An 8-week internship focused on practical **AWS cloud engineering, infrastructure design, application deployment and operational management**.
@@ -103,7 +103,7 @@ An 8-week internship focused on practical **AWS cloud engineering, infrastructur
 
 Worked with cloud networking, Linux-based environments, application hosting, database deployment, load balancing, auto scaling, monitoring and production-oriented AWS workflows.
 
-### 🤖 AI & Web Applications Intern
+### AI & Web Applications Intern
 **NeuralTransformers.AI**
 
 Gained practical exposure to **AI-assisted application development and modern web technologies**, contributing to projects that combined software development with intelligent application capabilities.
@@ -112,18 +112,18 @@ Gained practical exposure to **AI-assisted application development and modern we
 
 ---
 
-## 🏆 Achievements
+## Achievements
 
 | Achievement | Recognition |
 |---|---|
-| 🥉 **3rd Place** | SRM Technowiz Web Application Competition |
-| 🏆 **Finalist** | National-Level Hackathon — Rotary International |
-| 🛡️ **7th Place** | National-Level CTF Team Competition |
-| 🚀 **Participant / Builder** | Aerothon 2026 — Null Pointerz |
+| **3rd Place** | SRM Technowiz Web Application Competition |
+| **Finalist** | National-Level Hackathon — Rotary International |
+| **7th Place** | National-Level CTF Team Competition |
+| **Aerothon 2026** | Aerospace systems development — Team Null Pointerz |
 
 ---
 
-## 🧠 Engineering Focus
+## Engineering Focus
 
 ```text
 CYBERSECURITY
@@ -149,7 +149,7 @@ PRODUCT ENGINEERING
 
 ---
 
-## 📊 GitHub Activity
+## GitHub Activity
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=prajansanjayk1&show_icons=true&hide_border=true&bg_color=00000000&title_color=2563EB&icon_color=7C3AED&text_color=475569&rank_icon=github" height="170" alt="GitHub statistics" />
@@ -162,7 +162,7 @@ PRODUCT ENGINEERING
 
 ---
 
-## 🔬 Current Research & Build Direction
+## Current Research & Build Direction
 
 > **Secure systems. Intelligent models. Cloud-native infrastructure.**
 
@@ -178,7 +178,7 @@ Currently exploring the intersection of **cybersecurity, explainable AI, predict
 
 ---
 
-## 📫 Let's Connect
+## Let's Connect
 
 I'm open to **cybersecurity, AI/ML, cloud engineering, full-stack development, research and ambitious engineering projects**.
 
