@@ -1,54 +1,42 @@
 <div align="center">
-  <img src="./assets/hero.svg" alt="Prajan Sanjay K — Cybersecurity, AI & Cloud Engineering" width="100%" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg">
+    <img src="./assets/hero-light.svg" alt="Prajan Sanjay K — Cybersecurity, AI/ML, Cloud Engineering and Full-Stack Development" width="100%" />
+  </picture>
 </div>
 
 <p align="center">
-  <a href="https://github.com/prajansanjayk1"><img src="https://img.shields.io/badge/GitHub-prajansanjayk1-111827?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
+  <a href="https://github.com/prajansanjayk1"><img src="https://img.shields.io/badge/GitHub-prajansanjayk1-0F172A?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
   <img src="https://komarev.com/ghpvc/?username=prajansanjayk1&style=flat-square&color=2563EB" alt="Profile views" />
-  <img src="https://img.shields.io/github/followers/prajansanjayk1?style=flat-square&label=Followers&color=7C3AED" alt="Followers" />
 </p>
 
 ## About Me
 
-I'm **Prajan Sanjay K**, a **B.E. CSE student specializing in Cybersecurity** with a strong interest in building secure, intelligent and production-oriented systems.
+I'm **Prajan Sanjay K**, a **B.E. CSE student specializing in Cybersecurity** at Chennai Institute of Technology, building systems at the intersection of **Cybersecurity, AI/ML, Cloud Engineering and Full-Stack Development**.
 
-My work sits at the intersection of **Cybersecurity × AI/ML × Cloud Engineering × Full-Stack Development**. I enjoy taking an idea from architecture and implementation through deployment, testing and real-world evaluation.
+I enjoy taking technically demanding ideas from **problem definition → system architecture → implementation → validation → deployment**. My work spans security-focused applications, intelligent predictive systems, cloud infrastructure and real-world product engineering.
 
-- **Cybersecurity** — secure software, application security & CTFs
-- **AI / ML** — predictive systems, explainable models & intelligent agents
-- **Cloud Engineering** — AWS infrastructure, deployment & DevOps
-- **Software Engineering** — full-stack and cross-platform application development
-- **Product Engineering** — hackathons, research-driven prototypes & practical systems
+**What I work on**
 
----
-
-## Technology DNA
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,js,ts,html,css,react,nodejs,express,flutter,firebase,supabase,mongodb,mysql,aws,docker,git,github,linux&perline=9" alt="Technology stack" />
-</p>
-
-| Domain | Technologies & Focus |
-|---|---|
-| **Cybersecurity** | Security Engineering · CTF · Secure Web Development · IAM · Network Security |
-| **Cloud / DevOps** | AWS EC2 · S3 · IAM · VPC · RDS · Route 53 · ALB · ASG · CloudWatch |
-| **AI / ML** | Python · Predictive Analytics · Explainable ML · Feature Engineering · AI Agents |
-| **Development** | React · Node.js · Express · Flutter · Firebase · Supabase |
-| **Databases** | MySQL · MongoDB · Firestore · RDS |
-| **Engineering** | Git · GitHub · Linux · Docker · CI/CD · Cloud Deployment |
+- **Cybersecurity** — secure application design, web and network security, CTFs
+- **AI / ML** — predictive systems, explainable machine learning and intelligent agents
+- **Cloud Engineering** — AWS infrastructure, deployment, networking and operations
+- **Software Engineering** — full-stack, cross-platform and real-time applications
+- **Systems Research** — digital twins, predictive maintenance and applied engineering
 
 ---
 
-## Featured Systems
+## Selected Work
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
 ### SubAero — Aerothon 2026
-**Digital Twin & Aerospace Prognostics**
+**Aerospace Prognostics & Digital Twin**
 
-Aerospace-focused predictive maintenance platform developed for **Aerothon 2026** with team **Null Pointerz**. The project explores remaining-useful-life estimation, feature engineering, interpretable machine learning and physics-informed aerospace reasoning for turbojet engine maintenance.
+Developed with **Null Pointerz** for Aerothon 2026. A predictive maintenance platform for aerospace engines combining remaining-useful-life estimation, feature engineering, interpretable ML and physics-informed reasoning.
 
 `Python` `ML` `XAI` `Digital Twin` `Aerospace`
 
@@ -56,11 +44,11 @@ Aerospace-focused predictive maintenance platform developed for **Aerothon 2026*
 <td width="50%" valign="top">
 
 ### MediQue
-**Smart Healthcare Queue Intelligence**
+**Real-Time Healthcare Queue Intelligence**
 
-Real-time clinic workflow platform with live queue synchronization, intelligent wait-time estimation, receptionist workflows and patient-facing updates.
+A clinic workflow platform built around live queue synchronization, intelligent wait-time estimation and efficient patient-reception workflows.
 
-`Flutter` `Firebase` `Firestore` `AI`
+`Flutter` `Firebase` `Firestore` `Real-Time Systems`
 
 </td>
 </tr>
@@ -68,9 +56,9 @@ Real-time clinic workflow platform with live queue synchronization, intelligent 
 <td width="50%" valign="top">
 
 ### AURYN
-**AI-Powered Hospitality Platform**
+**Intelligent Hospitality Operations**
 
-A multi-workspace restaurant platform connecting customer, staff and manager workflows with intelligent assistance, real-time operations and a unified digital experience.
+A multi-workspace platform connecting customer, staff and management workflows with AI-assisted operations and real-time restaurant management.
 
 `Flutter` `Supabase` `AI` `SaaS`
 
@@ -80,9 +68,9 @@ A multi-workspace restaurant platform connecting customer, staff and manager wor
 ### FINOAISPARK
 **Financial Security Intelligence**
 
-An AI-assisted financial security concept exploring risk monitoring, banking defense workflows and multi-agent reasoning for financial systems.
+An experimental platform exploring AI-assisted risk monitoring, banking defense workflows and multi-agent reasoning for financial systems.
 
-`AI Agents` `Security` `FinTech`
+`Python` `AI Agents` `Security` `FinTech`
 
 </td>
 </tr>
@@ -92,95 +80,76 @@ An AI-assisted financial security concept exploring risk monitoring, banking def
 
 ## Internship Experience
 
-### DevOps & AWS Cloud Engineering Intern
-**SBV Technologies Pvt. Ltd. · May 2026 – June 2026**
+### SBV Technologies Pvt. Ltd.
+**DevOps & AWS Cloud Engineering Intern | May 2026 – June 2026**
 
-An 8-week internship focused on practical **AWS cloud engineering, infrastructure design, application deployment and operational management**.
+Completed an 8-week engineering internship focused on **cloud infrastructure, application deployment and operational management**.
 
-**Hands-on exposure:**
+**Engineering exposure:** `EC2` `S3` `IAM` `VPC` `RDS MySQL` `Route 53` `ALB` `ASG` `CloudWatch` `Linux`
 
-`EC2` `S3` `IAM` `VPC` `RDS MySQL` `Route 53` `ALB` `ASG` `CloudWatch` `Security Groups`
+Worked across infrastructure design, cloud networking, application hosting, database deployment, load balancing, auto scaling, monitoring and security configuration, gaining practical experience operating AWS-based application environments.
 
-Worked with cloud networking, Linux-based environments, application hosting, database deployment, load balancing, auto scaling, monitoring and production-oriented AWS workflows.
+### NeuralTransformers.AI
+**AI & Web Applications Intern**
 
-### AI & Web Applications Intern
-**NeuralTransformers.AI**
+Gained practical experience in **AI-assisted application development and modern web technologies**, working across intelligent applications, software development and integration workflows.
 
-Gained practical exposure to **AI-assisted application development and modern web technologies**, contributing to projects that combined software development with intelligent application capabilities.
-
-`AI` `Web Development` `Python` `Application Development`
+`AI` `Python` `Web Development` `Application Engineering`
 
 ---
 
-## Achievements
+## Recognition
 
-| Achievement | Recognition |
+| Result | Recognition |
 |---|---|
 | **3rd Place** | SRM Technowiz Web Application Competition |
-| **Finalist** | National-Level Hackathon — Rotary International |
+| **National Finalist** | Rotary International Hackathon |
 | **7th Place** | National-Level CTF Team Competition |
-| **Aerothon 2026** | Aerospace systems development — Team Null Pointerz |
+| **Aerothon 2026** | Aerospace systems development — Null Pointerz |
 
 ---
 
-## Engineering Focus
-
-```text
-CYBERSECURITY
-├── Secure Application Design
-├── Web & Network Security
-└── CTF / Security Research
-
-ARTIFICIAL INTELLIGENCE
-├── Predictive Systems
-├── Explainable Machine Learning
-└── Intelligent Agents
-
-CLOUD ENGINEERING
-├── AWS Infrastructure
-├── Deployment & Operations
-└── Scalable Cloud Architecture
-
-PRODUCT ENGINEERING
-├── Full-Stack Applications
-├── Real-Time Systems
-└── Hackathon → Prototype → Product
-```
-
----
-
-## Engineering Activity
-
-<div align="center">
-  <img src="./assets/activity-dashboard.svg" alt="Prajan Sanjay K — Engineering Activity Dashboard" width="100%" />
-</div>
-
----
-
-## Current Research & Build Direction
-
-> **Secure systems. Intelligent models. Cloud-native infrastructure.**
-
-Currently exploring the intersection of **cybersecurity, explainable AI, predictive maintenance, cloud engineering and intelligent product architecture**.
-
-```text
-01  Security Engineering       ████████████████████  ACTIVE
-02  AI / Explainable ML        ███████████████████░  ACTIVE
-03  Cloud & DevOps             ██████████████████░░  ACTIVE
-04  Aerospace Prognostics      █████████████████░░░  RECENT
-05  Product Engineering        ███████████████████░  ACTIVE
-```
-
----
-
-## Let's Connect
-
-I'm open to **cybersecurity, AI/ML, cloud engineering, full-stack development, research and ambitious engineering projects**.
+## Technology Stack
 
 <p align="center">
-  <b>Build with purpose. Engineer with discipline. Secure what you ship.</b>
+  <img src="https://skillicons.dev/icons?i=python,js,ts,html,css,react,nodejs,express,flutter,firebase,supabase,mongodb,mysql,aws,docker,git,github,linux&perline=9" alt="Technology stack" />
+</p>
+
+| Domain | Focus |
+|---|---|
+| **Security** | Cybersecurity · Web Security · Network Security · IAM · CTF |
+| **AI / ML** | Python · Predictive Analytics · Explainable ML · Feature Engineering · AI Agents |
+| **Cloud / DevOps** | AWS · EC2 · S3 · VPC · RDS · ALB · ASG · CloudWatch · Docker · Linux |
+| **Application Engineering** | React · Node.js · Express · Flutter · Firebase · Supabase |
+| **Data** | MySQL · MongoDB · Firestore · RDS |
+| **Engineering Practice** | Git · GitHub · REST APIs · CI/CD · Cloud Deployment · System Architecture |
+
+---
+
+## Engineering Philosophy
+
+> **Build systems that are useful. Make them explainable. Secure them by design. Engineer them to last.**
+
+I am most interested in projects where software engineering meets a real technical constraint — **security, reliability, scale, prediction or operational complexity**.
+
+---
+
+## Current Direction
+
+**Security Engineering** · **Explainable AI** · **Cloud Architecture** · **Aerospace Prognostics** · **Intelligent Product Systems**
+
+The current focus is on turning research ideas and hackathon prototypes into **measurable, explainable and production-minded systems**.
+
+---
+
+## Let's Build
+
+Open to collaborating on **cybersecurity, AI/ML, cloud infrastructure, research, developer tools and ambitious product engineering projects**.
+
+<p align="center">
+  <strong>Security-minded engineering. Intelligent systems. Real-world impact.</strong>
 </p>
 
 <p align="center">
-  <sub>Prajan Sanjay K · Cybersecurity × AI/ML × Cloud × Engineering</sub>
+  <sub>Prajan Sanjay K · Chennai, India</sub>
 </p>
