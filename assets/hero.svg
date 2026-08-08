@@ -1,0 +1,66 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="0.55" stop-color="#EFF6FF"/>
+      <stop offset="1" stop-color="#F5F3FF"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="120" y1="70" x2="1040" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#64748B" flood-opacity="0.15"/>
+    </filter>
+    <style>
+      .title{font:700 48px Inter,Segoe UI,Arial,sans-serif;fill:#0F172A}
+      .sub{font:500 20px Inter,Segoe UI,Arial,sans-serif;fill:#475569}
+      .mono{font:600 14px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#2563EB}
+      .chip{font:600 13px Inter,Segoe UI,Arial,sans-serif;fill:#334155}
+    </style>
+  </defs>
+
+  <rect width="1200" height="360" rx="28" fill="url(#bg)"/>
+  <circle cx="1030" cy="70" r="150" fill="#DBEAFE" opacity="0.55">
+    <animate attributeName="r" values="145;160;145" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1080" cy="285" r="120" fill="#EDE9FE" opacity="0.65">
+    <animate attributeName="r" values="115;130;115" dur="6s" repeatCount="indefinite"/>
+  </circle>
+
+  <g filter="url(#shadow)">
+    <rect x="66" y="58" width="1068" height="244" rx="24" fill="white" fill-opacity="0.82"/>
+  </g>
+
+  <text x="104" y="108" class="mono">PRAJAN.SYS / PROFILE INITIALIZED</text>
+  <text x="104" y="165" class="title">Prajan Sanjay K</text>
+  <text x="104" y="203" class="sub">Cybersecurity Engineer · Full-Stack Builder · Cloud &amp; AI</text>
+
+  <rect x="104" y="232" width="136" height="34" rx="17" fill="#EFF6FF"/>
+  <text x="172" y="254" text-anchor="middle" class="chip">Cybersecurity</text>
+  <rect x="252" y="232" width="112" height="34" rx="17" fill="#F5F3FF"/>
+  <text x="308" y="254" text-anchor="middle" class="chip">Cloud</text>
+  <rect x="376" y="232" width="112" height="34" rx="17" fill="#EFF6FF"/>
+  <text x="432" y="254" text-anchor="middle" class="chip">AI / ML</text>
+  <rect x="500" y="232" width="132" height="34" rx="17" fill="#F5F3FF"/>
+  <text x="566" y="254" text-anchor="middle" class="chip">Full Stack</text>
+
+  <g transform="translate(875 102)">
+    <circle cx="0" cy="0" r="62" fill="white" stroke="#DBEAFE" stroke-width="2"/>
+    <circle cx="0" cy="0" r="43" fill="none" stroke="url(#accent)" stroke-width="3" stroke-dasharray="8 7">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M-20 0h40M0-20v40" stroke="#2563EB" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="9" fill="#7C3AED">
+      <animate attributeName="r" values="8;11;8" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <text x="812" y="212" class="mono">BUILDING → SECURING → SHIPPING</text>
+  <path d="M812 226 C900 245 1010 235 1080 210" stroke="url(#accent)" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 8">
+    <animate attributeName="stroke-dashoffset" values="0;-52" dur="2.5s" repeatCount="indefinite"/>
+  </path>
+
+  <text x="104" y="288" class="mono">Chennai · India</text>
+  <text x="1080" y="288" text-anchor="end" class="mono">OPEN TO BUILD</text>
+</svg>
