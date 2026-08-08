@@ -1,10 +1,8 @@
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg">
-    <img src="./assets/hero-light.svg" alt="Prajan Sanjay K — Cybersecurity, AI/ML, Cloud Engineering and Full-Stack Development" width="100%" />
-  </picture>
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg">
+  <img src="./assets/hero-light.svg" alt="Prajan Sanjay K — Cybersecurity, AI/ML, Cloud Engineering and Full-Stack Development" width="100%" />
+</picture>
 
 <p align="center">
   <a href="https://github.com/prajansanjayk1"><img src="https://img.shields.io/badge/GitHub-prajansanjayk1-0F172A?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
