@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/prajan-banner.svg" alt="Prajan Sanjay K — Cybersecurity Engineer, Full-Stack Builder, Cloud & AI" width="100%" />
+  <img src="./assets/prajan-banner-v2.svg" alt="Prajan Sanjay K — Cybersecurity Engineer, Full-Stack Builder, Cloud & AI" width="100%" />
 </div>
 
 <p align="center">
