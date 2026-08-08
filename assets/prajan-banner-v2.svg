@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="350" viewBox="0 0 1200 350" fill="none">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="350" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF"/><stop offset="0.58" stop-color="#F5F8FF"/><stop offset="1" stop-color="#F7F2FF"/></linearGradient>
+  <linearGradient id="accent" x1="760" y1="0" x2="1110" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#2563EB"/><stop offset="1" stop-color="#7C3AED"/></linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#475569" flood-opacity="0.12"/></filter>
+  <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" stroke="#CBD5E1" stroke-opacity="0.18"/></pattern>
+</defs>
+<rect width="1200" height="350" rx="28" fill="url(#bg)"/>
+<rect x="780" width="420" height="350" fill="url(#grid)" opacity="0.8"/>
+<circle cx="1110" cy="55" r="150" fill="#DBEAFE" opacity="0.35"><animate attributeName="r" values="145;160;145" dur="8s" repeatCount="indefinite"/></circle>
+<circle cx="1130" cy="300" r="130" fill="#EDE9FE" opacity="0.38"><animate attributeName="r" values="125;140;125" dur="9s" repeatCount="indefinite"/></circle>
+<g filter="url(#shadow)"><rect x="42" y="38" width="1116" height="274" rx="24" fill="#FFFFFF" fill-opacity="0.95" stroke="#DCE5F0"/></g>
+
+<!-- Left content -->
+<text x="78" y="82" font-family="Arial,Segoe UI,sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#2563EB">PRAJAN.SYS  /  PROFILE INITIALIZED</text>
+<circle cx="335" cy="78" r="3.5" fill="#2563EB"><animate attributeName="opacity" values="1;.2;1" dur="1.6s" repeatCount="indefinite"/></circle>
+<text x="78" y="137" font-family="Arial,Segoe UI,sans-serif" font-size="43" font-weight="800" letter-spacing="-1.2" fill="#0F172A">Prajan Sanjay K</text>
+<text x="78" y="166" font-family="Arial,Segoe UI,sans-serif" font-size="16" font-weight="500" fill="#334155">Cybersecurity Engineer  ·  Full-Stack Builder  ·  Cloud &amp; AI</text>
+<text x="78" y="191" font-family="monospace" font-size="9.5" font-weight="700" letter-spacing="1" fill="#64748B">BUILDING SECURE SYSTEMS · INTELLIGENT PRODUCTS · CLOUD INFRASTRUCTURE</text>
+
+<g font-family="Arial,Segoe UI,sans-serif" font-size="10" font-weight="700">
+  <rect x="78" y="213" width="110" height="28" rx="14" fill="#EFF6FF" stroke="#DBEAFE"/><text x="133" y="231" text-anchor="middle" fill="#2563EB">CYBERSECURITY</text>
+  <rect x="198" y="213" width="82" height="28" rx="14" fill="#F5F3FF" stroke="#EDE9FE"/><text x="239" y="231" text-anchor="middle" fill="#6D28D9">CLOUD</text>
+  <rect x="290" y="213" width="86" height="28" rx="14" fill="#EFF6FF" stroke="#DBEAFE"/><text x="333" y="231" text-anchor="middle" fill="#2563EB">AI / ML</text>
+  <rect x="386" y="213" width="102" height="28" rx="14" fill="#F5F3FF" stroke="#EDE9FE"/><text x="437" y="231" text-anchor="middle" fill="#6D28D9">FULL STACK</text>
+</g>
+<text x="78" y="277" font-family="monospace" font-size="10" fill="#64748B">CHENNAI · INDIA</text>
+
+<!-- Right visual zone -->
+<line x1="700" y1="72" x2="700" y2="278" stroke="#E2E8F0"/>
+<g transform="translate(760 70)">
+  <!-- animation badge -->
+  <circle cx="105" cy="55" r="42" fill="#FFFFFF" stroke="#DCE5F0" stroke-width="1.5"/>
+  <circle cx="105" cy="55" r="29" fill="none" stroke="url(#accent)" stroke-width="3" stroke-dasharray="6 6">
+    <animateTransform attributeName="transform" type="rotate" from="0 105 55" to="360 105 55" dur="10s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="105" cy="55" r="18" fill="#F8FAFC" stroke="#2563EB" stroke-width="1.5"/>
+  <path d="M95 55H115M105 45V65" stroke="#2563EB" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="105" cy="55" r="5" fill="#7C3AED"><animate attributeName="r" values="4;7;4" dur="1.8s" repeatCount="indefinite"/></circle>
+  <circle cx="105" cy="5" r="3.5" fill="#2563EB"><animate attributeName="cy" values="5;9;5" dur="2.4s" repeatCount="indefinite"/></circle>
+  <circle cx="155" cy="55" r="3.5" fill="#7C3AED"><animate attributeName="cx" values="155;151;155" dur="2.7s" repeatCount="indefinite"/></circle>
+
+  <!-- process signal, deliberately separated from quote -->
+  <text x="0" y="116" font-family="monospace" font-size="9.5" font-weight="700" letter-spacing="0.6" fill="#2563EB">BUILDING</text>
+  <text x="72" y="116" font-family="monospace" font-size="9.5" fill="#94A3B8">→</text>
+  <text x="92" y="116" font-family="monospace" font-size="9.5" font-weight="700" fill="#6D28D9">SECURING</text>
+  <text x="180" y="116" font-family="monospace" font-size="9.5" fill="#94A3B8">→</text>
+  <text x="200" y="116" font-family="monospace" font-size="9.5" font-weight="700" fill="#2563EB">SHIPPING</text>
+  <rect x="0" y="129" width="230" height="2" rx="1" fill="#E2E8F0"/>
+  <rect x="0" y="129" width="72" height="2" rx="1" fill="url(#accent)"><animate attributeName="width" values="35;190;35" dur="3.4s" repeatCount="indefinite"/></rect>
+
+  <!-- quote area -->
+  <text x="0" y="164" font-family="Georgia,Times New Roman,serif" font-size="16" font-style="italic" fill="#1E293B">“Code with purpose.</text>
+  <text x="0" y="187" font-family="Georgia,Times New Roman,serif" font-size="16" font-style="italic" fill="#1E293B">Secure with passion.”</text>
+  <text x="0" y="215" font-family="Arial,Segoe UI,sans-serif" font-size="12" font-weight="800" letter-spacing="1.4" fill="#2563EB">BUILD FOR IMPACT.</text>
+  <rect x="0" y="231" width="170" height="2" rx="1" fill="url(#accent)"><animate attributeName="width" values="55;170;55" dur="3s" repeatCount="indefinite"/></rect>
+</g>
+</svg>
