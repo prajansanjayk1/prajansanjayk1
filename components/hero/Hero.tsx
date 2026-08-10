@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { personal } from "@/lib/data";
+import { personal, getAssetPath } from "@/lib/data";
 import { AnimateIn } from "../ui/AnimateIn";
 import { ArrowRight } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/ui/Icons";
@@ -86,7 +86,7 @@ export function Hero() {
 
                 {/* Secondary Action Button */}
                 <a
-                  href="/resume.pdf"
+                  href={getAssetPath("/resume.pdf")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="h-[48px] px-6 inline-flex items-center gap-2 rounded-xl font-medium text-sm bg-slate-900/80 border border-white/10 text-slate-200 hover:border-[var(--color-accent-cyan)]/50 hover:bg-white/[0.04] transition-all"
@@ -126,7 +126,7 @@ export function Hero() {
                 {/* Profile Portrait Container */}
                 <div className="w-full max-w-[250px] sm:max-w-[280px] lg:max-w-[320px] aspect-[4/4.8] rounded-[18px] overflow-hidden border border-white/10 relative bg-[#090d16] flex justify-center">
                   <Image
-                    src="/profile.jpg"
+                    src={getAssetPath("/profile.jpg")}
                     alt={personal.name}
                     width={800}
                     height={960}

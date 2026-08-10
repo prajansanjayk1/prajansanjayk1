@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import { getAssetPath } from "@/lib/data";
 
 const NAV_LINKS = [
   { label: "Home", href: "#hero" },
@@ -69,7 +70,7 @@ export function Navbar() {
               <span className="text-[var(--color-accent-emerald)] text-xs">●</span> Open for Roles
             </div>
             <a
-              href="/resume.pdf"
+              href={getAssetPath("/resume.pdf")}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-[var(--color-accent-cyan)] to-[var(--color-accent-violet)] text-[var(--color-bg-primary)] px-4 py-2 rounded-md font-medium text-sm hover:opacity-90 transition-opacity"
@@ -108,7 +109,7 @@ export function Navbar() {
               </Link>
             ))}
             <a
-              href="/resume.pdf"
+              href={getAssetPath("/resume.pdf")}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 bg-gradient-to-r from-[var(--color-accent-cyan)] to-[var(--color-accent-violet)] text-[var(--color-bg-primary)] px-6 py-3 rounded-md font-bold w-full text-center"

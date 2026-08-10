@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { personal } from "@/lib/data";
+import { personal, getAssetPath } from "@/lib/data";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/ui/Icons";
 import React, { useState } from "react";
@@ -168,7 +168,7 @@ export default function Contact() {
           <p className="text-sm text-[var(--color-text-muted)] mt-1">Download my complete resume in PDF format.</p>
         </div>
         <a
-          href="/resume.pdf"
+          href={getAssetPath("/resume.pdf")}
           target="_blank"
           rel="noopener noreferrer"
           className="whitespace-nowrap px-8 py-3 rounded-xl bg-gradient-to-r from-[var(--color-accent-cyan)] to-[var(--color-accent-blue)] text-white font-bold hover:opacity-90 transition-opacity"
