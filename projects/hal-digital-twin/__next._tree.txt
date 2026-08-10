@@ -1,2 +1,2 @@
-:HL["/prajansanjayk1/_next/static/chunks/0ugrx929ampzl.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"projects","param":null,"prefetchHints":4192,"slots":{"children":{"name":"hal-digital-twin","param":null,"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"FS-5BROU0PpWvn2mCrxZk"}
+:HL["/prajansanjayk1/_next/static/chunks/2y6c6d19hod5p.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"projects","param":null,"prefetchHints":4192,"slots":{"children":{"name":"hal-digital-twin","param":null,"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"a0_MTDGN45w_AUVe8Sp92"}
