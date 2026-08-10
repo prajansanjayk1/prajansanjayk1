@@ -40,7 +40,7 @@
   <circle cx="105" cy="5" r="3.5" fill="#2563EB"><animate attributeName="cy" values="5;9;5" dur="2.4s" repeatCount="indefinite"/></circle>
   <circle cx="155" cy="55" r="3.5" fill="#7C3AED"><animate attributeName="cx" values="155;151;155" dur="2.7s" repeatCount="indefinite"/></circle>
 
-  <!-- process signal, deliberately separated from quote -->
+  <!-- process signal -->
   <text x="0" y="116" font-family="monospace" font-size="9.5" font-weight="700" letter-spacing="0.6" fill="#2563EB">BUILDING</text>
   <text x="72" y="116" font-family="monospace" font-size="9.5" fill="#94A3B8">→</text>
   <text x="92" y="116" font-family="monospace" font-size="9.5" font-weight="700" fill="#6D28D9">SECURING</text>
