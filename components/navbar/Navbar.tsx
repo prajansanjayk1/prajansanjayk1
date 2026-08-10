@@ -2,24 +2,29 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { usePathname } from "next/navigation";
+import { Menu, X, Terminal as TerminalIcon } from "lucide-react";
 import { getAssetPath } from "@/lib/data";
 
 const NAV_LINKS = [
-  { label: "Home", href: "#hero" },
-  { label: "About", href: "#about" },
-  { label: "Experience", href: "#experience" },
-  { label: "Projects", href: "#projects" },
-  { label: "Skills", href: "#skills" },
-  { label: "Achievements", href: "#achievements" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/#hero" },
+  { label: "About", href: "/#about" },
+  { label: "Experience", href: "/#experience" },
+  { label: "Projects", href: "/#projects" },
+  { label: "Skills", href: "/#skills" },
+  { label: "Achievements", href: "/#achievements" },
+  { label: "Terminal", href: "/terminal", isTerminal: true },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export function Navbar() {
+  const pathname = usePathname();
   const [activeSection, setActiveSection] = useState("hero");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
+    if (pathname !== "/") return;
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -31,37 +36,50 @@ export function Navbar() {
       { rootMargin: "-50% 0px -50% 0px" }
     );
 
-    NAV_LINKS.forEach(({ href }) => {
-      const el = document.querySelector(href);
+    NAV_LINKS.forEach(({ href, isTerminal }) => {
+      if (isTerminal) return;
+      const targetId = href.replace("/#", "#");
+      const el = document.querySelector(targetId);
       if (el) observer.observe(el);
     });
 
     return () => observer.disconnect();
-  }, []);
+  }, [pathname]);
 
   return (
     <>
       <nav className="fixed top-0 left-0 right-0 z-50 h-[80px] bg-[var(--color-bg-surface)] backdrop-blur-xl border-b border-[var(--color-border-subtle)]">
         <div className="container-main h-full flex items-center justify-between">
-          <Link href="#hero" className="font-[family-name:var(--font-mono)] font-bold text-xl text-[var(--color-text-main)] hover:text-[var(--color-accent-cyan)] transition-colors">
+          <Link href="/#hero" className="font-[family-name:var(--font-mono)] font-bold text-xl text-[var(--color-text-main)] hover:text-[var(--color-accent-cyan)] transition-colors">
             {"<PSK />"}
           </Link>
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-6">
-            {NAV_LINKS.map(({ label, href }) => (
-              <Link
-                key={href}
-                href={href}
-                className={`text-sm font-medium transition-colors ${
-                  activeSection === href.substring(1)
-                    ? "text-[var(--color-accent-cyan)]"
-                    : "text-[var(--color-text-muted)] hover:text-[var(--color-text-main)]"
-                }`}
-              >
-                {label}
-              </Link>
-            ))}
+            {NAV_LINKS.map(({ label, href, isTerminal }) => {
+              const isActive = isTerminal
+                ? pathname === "/terminal"
+                : pathname === "/" && activeSection === href.replace("/#", "");
+
+              return (
+                <Link
+                  key={href}
+                  href={href}
+                  className={`text-sm font-medium transition-all flex items-center gap-1.5 ${
+                    isTerminal
+                      ? isActive
+                        ? "text-[var(--color-accent-cyan)] font-mono font-semibold bg-[var(--color-accent-cyan)]/10 border border-[var(--color-accent-cyan)]/30 px-2.5 py-1 rounded-md"
+                        : "text-slate-300 font-mono hover:text-[var(--color-accent-cyan)] bg-white/[0.04] border border-white/10 px-2.5 py-1 rounded-md"
+                      : isActive
+                      ? "text-[var(--color-accent-cyan)] font-semibold"
+                      : "text-[var(--color-text-muted)] hover:text-[var(--color-text-main)]"
+                  }`}
+                >
+                  {isTerminal && <TerminalIcon className="w-3.5 h-3.5 text-[var(--color-accent-cyan)]" />}
+                  {label}
+                </Link>
+              );
+            })}
           </div>
 
           {/* Status & Resume */}
@@ -93,21 +111,30 @@ export function Navbar() {
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
         <div className="fixed inset-0 z-40 bg-[var(--color-bg-primary)] pt-[80px]">
-          <div className="flex flex-col items-center justify-center h-full gap-8 p-6">
-            {NAV_LINKS.map(({ label, href }) => (
-              <Link
-                key={href}
-                href={href}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className={`text-2xl font-medium ${
-                  activeSection === href.substring(1)
-                    ? "text-[var(--color-accent-cyan)]"
-                    : "text-[var(--color-text-muted)]"
-                }`}
-              >
-                {label}
-              </Link>
-            ))}
+          <div className="flex flex-col items-center justify-center h-full gap-7 p-6">
+            {NAV_LINKS.map(({ label, href, isTerminal }) => {
+              const isActive = isTerminal
+                ? pathname === "/terminal"
+                : pathname === "/" && activeSection === href.replace("/#", "");
+
+              return (
+                <Link
+                  key={href}
+                  href={href}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={`text-2xl font-medium flex items-center gap-2 ${
+                    isTerminal
+                      ? "text-[var(--color-accent-cyan)] font-mono"
+                      : isActive
+                      ? "text-[var(--color-accent-cyan)]"
+                      : "text-[var(--color-text-muted)]"
+                  }`}
+                >
+                  {isTerminal && <TerminalIcon className="w-5 h-5 text-[var(--color-accent-cyan)]" />}
+                  {label}
+                </Link>
+              );
+            })}
             <a
               href={getAssetPath("/resume.pdf")}
               target="_blank"
