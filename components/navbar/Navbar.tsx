@@ -13,7 +13,6 @@ const NAV_LINKS = [
   { label: "Projects", href: "/#projects" },
   { label: "Skills", href: "/#skills" },
   { label: "Achievements", href: "/#achievements" },
-  { label: "Terminal", href: "/terminal", isTerminal: true },
   { label: "Contact", href: "/#contact" },
 ];
 
@@ -36,8 +35,7 @@ export function Navbar() {
       { rootMargin: "-50% 0px -50% 0px" }
     );
 
-    NAV_LINKS.forEach(({ href, isTerminal }) => {
-      if (isTerminal) return;
+    NAV_LINKS.forEach(({ href }) => {
       const targetId = href.replace("/#", "#");
       const el = document.querySelector(targetId);
       if (el) observer.observe(el);
@@ -54,36 +52,49 @@ export function Navbar() {
             {"<PSK />"}
           </Link>
 
-          {/* Desktop Nav */}
+          {/* Desktop Nav Links */}
           <div className="hidden md:flex items-center gap-6">
-            {NAV_LINKS.map(({ label, href, isTerminal }) => {
-              const isActive = isTerminal
-                ? pathname === "/terminal"
-                : pathname === "/" && activeSection === href.replace("/#", "");
+            {NAV_LINKS.map(({ label, href }) => {
+              const isActive = pathname === "/" && activeSection === href.replace("/#", "");
 
               return (
                 <Link
                   key={href}
                   href={href}
-                  className={`text-sm font-medium transition-all flex items-center gap-1.5 ${
-                    isTerminal
-                      ? isActive
-                        ? "text-[var(--color-accent-cyan)] font-mono font-semibold bg-[var(--color-accent-cyan)]/10 border border-[var(--color-accent-cyan)]/30 px-2.5 py-1 rounded-md"
-                        : "text-slate-300 font-mono hover:text-[var(--color-accent-cyan)] bg-white/[0.04] border border-white/10 px-2.5 py-1 rounded-md"
-                      : isActive
+                  className={`text-sm font-medium transition-all ${
+                    isActive
                       ? "text-[var(--color-accent-cyan)] font-semibold"
                       : "text-[var(--color-text-muted)] hover:text-[var(--color-text-main)]"
                   }`}
                 >
-                  {isTerminal && <TerminalIcon className="w-3.5 h-3.5 text-[var(--color-accent-cyan)]" />}
                   {label}
                 </Link>
               );
             })}
           </div>
 
-          {/* Status & Resume */}
+          {/* Cyber Terminal Badge + Status & Resume */}
           <div className="hidden md:flex items-center gap-4">
+            
+            {/* Distinct High-End Cyber Terminal Link */}
+            <Link
+              href="/terminal"
+              className={`relative inline-flex items-center gap-2 px-3 py-1.5 rounded-lg font-[family-name:var(--font-mono)] text-xs font-semibold tracking-wider transition-all duration-300 ${
+                pathname === "/terminal"
+                  ? "bg-[#00e5ff]/15 border border-[#00e5ff] text-[#00e5ff] shadow-[0_0_15px_rgba(0,229,255,0.35)]"
+                  : "bg-[#0a0f1d] border border-[#00e5ff]/40 text-[#00e5ff] hover:bg-[#00e5ff]/15 hover:border-[#00e5ff] hover:shadow-[0_0_20px_rgba(0,229,255,0.35)]"
+              }`}
+            >
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00e5ff] opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00e5ff]"></span>
+              </span>
+              <TerminalIcon className="w-3.5 h-3.5 text-[#00e5ff]" />
+              <span className="text-[11px] uppercase tracking-widest font-bold">
+                CLI_TERMINAL
+              </span>
+            </Link>
+
             <div className="flex items-center gap-2 text-sm text-[var(--color-text-muted)] border border-[var(--color-border-subtle)] rounded-full px-3 py-1">
               <span className="text-[var(--color-accent-emerald)] text-xs">●</span> Open for Roles
             </div>
@@ -111,26 +122,36 @@ export function Navbar() {
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
         <div className="fixed inset-0 z-40 bg-[var(--color-bg-primary)] pt-[80px]">
-          <div className="flex flex-col items-center justify-center h-full gap-7 p-6">
-            {NAV_LINKS.map(({ label, href, isTerminal }) => {
-              const isActive = isTerminal
-                ? pathname === "/terminal"
-                : pathname === "/" && activeSection === href.replace("/#", "");
+          <div className="flex flex-col items-center justify-center h-full gap-6 p-6">
+            
+            {/* Mobile Cyber Terminal Button */}
+            <Link
+              href="/terminal"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="w-full max-w-[280px] py-3 px-4 rounded-xl bg-[#0a0f1d] border-2 border-[#00e5ff] text-[#00e5ff] font-[family-name:var(--font-mono)] font-bold text-center flex items-center justify-center gap-2.5 shadow-[0_0_20px_rgba(0,229,255,0.3)] text-sm tracking-widest uppercase mb-2"
+            >
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00e5ff] opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#00e5ff]"></span>
+              </span>
+              <TerminalIcon className="w-4 h-4 text-[#00e5ff]" />
+              CLI_TERMINAL
+            </Link>
+
+            {NAV_LINKS.map(({ label, href }) => {
+              const isActive = pathname === "/" && activeSection === href.replace("/#", "");
 
               return (
                 <Link
                   key={href}
                   href={href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`text-2xl font-medium flex items-center gap-2 ${
-                    isTerminal
-                      ? "text-[var(--color-accent-cyan)] font-mono"
-                      : isActive
+                  className={`text-2xl font-medium ${
+                    isActive
                       ? "text-[var(--color-accent-cyan)]"
                       : "text-[var(--color-text-muted)]"
                   }`}
                 >
-                  {isTerminal && <TerminalIcon className="w-5 h-5 text-[var(--color-accent-cyan)]" />}
                   {label}
                 </Link>
               );
